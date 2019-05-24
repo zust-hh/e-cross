@@ -9,6 +9,13 @@ const locationImg = require('../../static/location.png')
 
 const like1 = require('../../static/like1.png')
 const like2 = require('../../static/like1.png')
+const comment1 = require('../../static/comment2.png')
+const comment2 = require('../../static/comment2.png')
+const collect1 = require('../../static/collect2.png')
+const collect2 = require('../../static/collect2.png')
+const send1 = require('../../static/send2.png')
+const send2 = require('../../static/send2.png')
+
 
 export default class TeamCard extends Component {
 
@@ -53,16 +60,25 @@ export default class TeamCard extends Component {
             <View className="item-num">{this.props.data.likeNum}</View>
           </View>
           <View className="option-item">
-            <View className="item-icon"></View>
-            <View className="item-num"></View>
+            <Image 
+              className="item-icon"
+              src={this.props.data.isComment ? comment1 : comment2}
+            ></Image>
+            <View className="item-num">{this.props.data.commentNum}</View>
           </View>
           <View className="option-item">
-            <View className="item-icon"></View>
-            <View className="item-num"></View>
+            <Image
+              className="item-icon"
+              src={this.props.data.isCollect ? collect1 : collect2}
+            ></Image>
+            <View className="item-num">{this.props.data.collectNum}</View>
           </View>
           <View className="option-item">
-            <View className="item-icon"></View>
-            <View className="item-num"></View>
+            <Image
+              className="item-icon"
+              src={this.props.data.isSend ? send1 : send2}
+              ></Image>
+            <View className="item-num">{this.props.data.sendNum}</View>
           </View>
         </View>
       </View>
