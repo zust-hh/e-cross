@@ -11,6 +11,8 @@ const locationImg = require('../../static/location.png')
 const searchIcon = require('../../static/search.png')
 const service1 = require('../../static/service1.png')
 const serviceText1 = require('../../static/serviceText1.png')
+const avatar1 = require('../../static/avatar1.png')
+const teamCover1 = require('../../static/teamCover1.png')
 
 const list = [{
   name: '提供服务',
@@ -30,10 +32,29 @@ const list = [{
     name: '代理顾问',
     textImg: serviceText1
   }],
+  readMore: false
+}, {
+  name: '金牌团队',
+  listData: [{
+    type: 2,
+    teamAvatar: avatar1,
+    teamName: '衣之家设计团队',
+    teamContry: '中国',
+    teamCity: '杭州',
+    teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
+    teamCover: teamCover1
+  }, {
+    type: 2,
+    teamAvatar: avatar1,
+    teamName: '衣之家设计团队',
+    teamContry: '中国',
+    teamCity: '杭州',
+    teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
+    teamCover: teamCover1
+  }],
   readMore: true
 }]
 
-const tagArr1 =  ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃']
 export default class Index extends Component {
 
   config = {
