@@ -1,0 +1,10 @@
+@import '../../styles/mixin';
+
+.swiper {
+  width: 100vw;
+  height: 450px;
+  image,
+  img {
+    height: 450px !important;
+  }
+}
