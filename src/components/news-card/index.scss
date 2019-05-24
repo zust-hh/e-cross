@@ -1,7 +1,7 @@
 .news-card {
     width: 690px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1PX solid #ddd;
     border-radius: 10px;
     .news-user {
         display: flex;
@@ -45,5 +45,15 @@
         width: 100%;
         margin-top: 20px;
         border-radius: 30px;
+    }
+    .news-options {
+        display: flex;
+        justify-content: center;
+        .option-item {
+            .item-icon {
+                width:  28px;
+                height: 24px;
+            }
+        }
     }
 }
