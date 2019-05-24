@@ -1,8 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
+import { AtButton } from 'taro-ui'
 import './index.scss'
 
 const slider1 = require('../../static/slider1.png')
+const locationImg = require('../../static/location.png')
 
 export default class Index extends Component {
 
@@ -45,6 +47,12 @@ export default class Index extends Component {
             />
           </SwiperItem>
         </Swiper>
+        <View style='flex-direction:row;'>
+          <Image mode='widthFix'
+            src={locationImg}
+          />
+          <AtButton onClick={() => console.log('click')}>按钮文案</AtButton>
+        </View>
       </View>
     )
   }
