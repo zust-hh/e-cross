@@ -1,0 +1,49 @@
+.news-card {
+    width: 690px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    .news-user {
+        display: flex;
+        align-items: center;
+        .user-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+        }  
+        .news-info {
+            margin-left: 20px;
+            .news-title {
+                display: block;
+                font-size: 28px;
+                color: #45b5ed;
+            }
+            .news-date {
+                display: block;
+                font-size: 24px;
+                color: #ccc;
+            }
+        }  
+        .news-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 60px;
+            margin-left: auto;
+            font-size: 24px; 
+            border-radius: 30px;
+            background: #45b5ed;
+            color: #fff;
+        }
+    }
+    .news-intro {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    .news-cover {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+}

@@ -3,6 +3,8 @@ import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 import HomeItem from '../../components/homeItem'
 import './index.scss'
+import TeamCard from '../../components/team-card'
+import NewsCard from '../../components/news-card'
 
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
@@ -31,6 +33,7 @@ const list = [{
   readMore: true
 }]
 
+const tagArr1 =  ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃']
 export default class Index extends Component {
 
   config = {
