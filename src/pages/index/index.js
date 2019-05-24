@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
+import HomeItem from '../../components/homeItem'
 import './index.scss'
 import TeamCard from '../../components/team-card'
 import NewsCard from '../../components/news-card'
@@ -28,23 +29,35 @@ const newsData = {
   collectNum: "123",
   sendNum: "321",
 }
+const service1 = require('../../static/service1.png')
+const serviceText1 = require('../../static/serviceText1.png')
+
+const list = [{
+  name: '提供服务',
+  listData: [{
+    type: 1,
+    logoImg: service1,
+    name: '设计团队',
+    textImg: serviceText1
+  }, {
+    type: 1,
+    logoImg: service1,
+    name: '包装推广',
+    textImg: serviceText1
+  }, {
+    type: 1,
+    logoImg: service1,
+    name: '代理顾问',
+    textImg: serviceText1
+  }],
+  readMore: true
+}]
 
 export default class Index extends Component {
 
   config = {
     navigationBarTitleText: '首页'
   }
-  
-  
-  componentWillMount() { }
-
-  componentDidMount() { }
-
-  componentWillUnmount() { }
-
-  componentDidShow() { }
-
-  componentDidHide() { }
 
   render() {
     return (
@@ -56,13 +69,11 @@ export default class Index extends Component {
           />
           <AtButton onClick={() => console.log('click')}>
             <Image
-              mode='widthFix'
               src={searchIcon}
             />
-            按钮文案
+            <Text>输入关键字搜索</Text>
           </AtButton>
         </View>
-        <AtButton type='primary' size='normal'>按钮文案</AtButton>
         <Swiper
           indicatorColor='#999'
           indicatorActiveColor='#333'
@@ -91,6 +102,13 @@ export default class Index extends Component {
         <NewsCard
           data={newsData}
        ></NewsCard>
+        <View className="home-list">
+          {
+            list.map(item =>
+              <HomeItem listData={item.listData} readMore={item.readMore} name={item.name} />
+            )
+          }
+        </View>
       </View>
     )
   }

@@ -1,0 +1,70 @@
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .blue-line {
+      height: 36px;
+      width: 8px;
+      background-color: #4a84ff;
+      margin-right: 10px;
+    }
+    .taro-text {
+      font-size: 34px;
+      font-family: 'SimHei';
+    }
+  }
+  .read-more {
+    font-size: 26px;
+    font-family: 'SimHei';
+    color: #989898;
+  }
+}
+
+
+.service-card-container {
+  display: flex;
+  width: 196px;
+  height: 100px;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-color: #c3c3c3;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 3px 3px 2px #e0d2d2; 
+  background-color: white;
+  .logoImg {
+    width: 48px;
+    height: 48px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    margin-left: 15px;
+    .taro-text {
+      font-size: 30px;
+      font-family: 'SimHei';
+    }
+    .taro-img {
+      max-width: 111px;
+      height: 25px;
+    }
+  }
+}
