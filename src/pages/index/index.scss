@@ -6,8 +6,32 @@
   img {
     height: 400px !important;
   }
+  .taro-img {
+    width: 100vw;
+  }
 }
 
-.swiper .taro-img {
-  width: 100%;
+.searchBar {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  padding-left: 30px;
+  .taro-img {
+    width: 32px;
+    height: 42px;
+  }
+  .at-button {
+    width: 564px;
+    height: 58px;
+    margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.88);
+    justify-content: 'center';
+    .at-button__text {
+      color: #8e8e93;
+      line-height: 58px;
+      font-size: 18px
+    }
+  }
 }

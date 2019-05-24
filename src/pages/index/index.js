@@ -6,6 +6,7 @@ import TeamCard from '../../components/team-card'
 
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
+const searchIcon = require('../../static/search.png')
 
 export default class Index extends Component {
 
@@ -26,6 +27,20 @@ export default class Index extends Component {
   render() {
     return (
       <View className="container">
+        <View className="searchBar">
+          <Image
+            mode='widthFix'
+            src={locationImg}
+          />
+          <AtButton onClick={() => console.log('click')}>
+            <Image
+              mode='widthFix'
+              src={searchIcon}
+            />
+            按钮文案
+          </AtButton>
+        </View>
+        <AtButton type='primary' size='normal'>按钮文案</AtButton>
         <Swiper
           indicatorColor='#999'
           indicatorActiveColor='#333'
@@ -48,7 +63,6 @@ export default class Index extends Component {
             />
           </SwiperItem>
         </Swiper>
-        <TeamCard></TeamCard>
       </View>
     )
   }
