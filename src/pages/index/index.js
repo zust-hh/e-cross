@@ -73,6 +73,22 @@ const list = [{
     teamCover: teamCover1
   }],
   readMore: true
+}, {
+  name: '行业资讯',
+  listData: [{
+    type: 3,
+    newsAvatar: slider1,
+    newsTitle: "YOKA时尚精选",
+    newsDate: "2019/4/9",
+    newsBtn: "关注",
+    newsIntro: "干货|2019服饰流行趋势完全解读干货|2019服饰流行趋势完全解读",
+    newsCover: slider1,
+    likeNum: "145",
+    commentNum: "200",
+    collectNum: "123",
+    sendNum: "321",
+  }],
+  readMore: true
 }]
 
 export default class Index extends Component {
@@ -118,12 +134,12 @@ export default class Index extends Component {
             />
           </SwiperItem>
         </Swiper>
-        <TeamCard
+        {/* <TeamCard
          data={teamData}
         ></TeamCard>
         <NewsCard
           data={newsData}
-       ></NewsCard>
+       ></NewsCard> */}
         <View className="home-list">
           {
             list.map(item =>

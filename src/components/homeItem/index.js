@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import TeamCard from '../team-card';
+import NewsCard from '../news-card';
 import './index.scss'
 
 export default class HomeItem extends Component {
@@ -12,6 +13,7 @@ export default class HomeItem extends Component {
     switch (data.type) {
       case 1: return this.renderServiceCard(data)
       case 2: return <TeamCard data={data}/>
+      case 3: return <NewsCard data={data}/>
     }
   }
 
