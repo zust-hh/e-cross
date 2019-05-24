@@ -1,0 +1,47 @@
+.case-card {
+    display: flex;
+    width: 690px;
+    padding: 20px;
+    border: 1PX solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);
+
+    .case-cover {
+        width: 298px;
+        height: 166px;
+        margin-right: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);
+    }
+    .case-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .case-desc {
+        font-size: 28px;
+        .case-sort {
+            color: #45b5ed;
+        }
+    }
+    }
+    .case-other {
+        display: flex;
+        align-items: center;
+        .case-watch {
+            width: 27px;
+            height: 19px;
+            margin-right: 10px;
+        }
+        .case-num {
+            font-size: 20px;
+            color: #ccc;
+        }
+        .case-date {
+            margin-left: auto;
+            font-size: 20px;
+            color: #ccc;
+    }
+}

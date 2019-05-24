@@ -5,6 +5,7 @@ import HomeItem from '../../components/homeItem'
 import './index.scss'
 import TeamCard from '../../components/team-card'
 import NewsCard from '../../components/news-card'
+import CaseCard from '../../components/case-card'
 
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
@@ -28,6 +29,13 @@ const newsData = {
   commentNum: "200",
   collectNum: "123",
   sendNum: "321",
+}
+const caseData = {
+  caseCover: slider1,
+  caseSort: '服装设计',
+  caseIntro: '按照先流行趋势结合面料特点进行设计',
+  caseWatchNum: 123,
+  caseDate: '04-18'
 }
 const service1 = require('../../static/service1.png')
 const serviceText1 = require('../../static/serviceText1.png')
@@ -102,6 +110,9 @@ export default class Index extends Component {
         <NewsCard
           data={newsData}
        ></NewsCard>
+       <CaseCard 
+        data={caseData}
+       ></CaseCard>
         <View className="home-list">
           {
             list.map(item =>
