@@ -9,6 +9,26 @@ import NewsCard from '../../components/news-card'
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
 const searchIcon = require('../../static/search.png')
+const teamData = {
+  teamAvatar: slider1,
+  teamName: "衣之家设计团队",
+  teamContry: "中国",
+  teamCity: "杭州",
+  teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
+  teamCover: slider1,
+}
+const newsData = {
+  newsAvatar: slider1,
+  newsTitle: "YOKA时尚精选",
+  newsDate: "2019/4/9",
+  newsBtn: "关注",
+  newsIntro: "干货|2019服饰流行趋势完全解读干货|2019服饰流行趋势完全解读",
+  newsCover: slider1,
+  likeNum: "145",
+  commentNum: "200",
+  collectNum: "123",
+  sendNum: "321",
+}
 const service1 = require('../../static/service1.png')
 const serviceText1 = require('../../static/serviceText1.png')
 const avatar1 = require('../../static/avatar1.png')
@@ -98,6 +118,12 @@ export default class Index extends Component {
             />
           </SwiperItem>
         </Swiper>
+        <TeamCard
+         data={teamData}
+        ></TeamCard>
+        <NewsCard
+          data={newsData}
+       ></NewsCard>
         <View className="home-list">
           {
             list.map(item =>

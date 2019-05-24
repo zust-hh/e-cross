@@ -16,25 +16,25 @@ export default class TeamCard extends Component {
         >
           <View className="team-info">
             <Image className="team-avatar" 
-              src={this.props.teamAvatar}
+              src={this.props.data.teamAvatar}
             ></Image>
             <View className="team-text">
-              <Text className="team-name">{this.props.teamName}</Text>
+              <Text className="team-name">{this.props.data.teamName}</Text>
               <View className="team-desc">
-                <Text className="team-contry">{this.props.teamContry}</Text>
-                <Text >{this.props.teamCity}</Text>
+                <Text className="team-contry">{this.props.data.teamContry}</Text>
+                <Text >{this.props.data.teamCity}</Text>
               </View>
             </View>
           </View>
           <View className="team-tags">
               {
-                this.props.teamTags.map((tag) => 
+                this.props.data.teamTags.map((tag) => 
                   <View className="team-tag-item">{tag}</View>
                 )
               }
           </View>
           <Image className="team-cover" 
-              src={this.props.teamCover}
+              src={this.props.data.teamCover}
               mode="widthFix"
             ></Image>   
         </View>

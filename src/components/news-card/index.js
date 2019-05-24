@@ -7,8 +7,8 @@ import './index.scss'
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
 
-const like1 = require('../../static/slider1.png')
-const like2 = require('../../static/slider1.png')
+const like1 = require('../../static/like1.png')
+const like2 = require('../../static/like1.png')
 
 export default class TeamCard extends Component {
 
@@ -28,27 +28,29 @@ export default class TeamCard extends Component {
         <View className="news-user">
           <Image
             className="user-avatar" 
-            src={this.props.newsAvatar}
+            src={this.props.data.newsAvatar}
           ></Image>
           <View className="news-info">
-            <Text className="news-title">{this.props.newsTitle}</Text>
-            <Text className="news-date">{this.props.newsDate}</Text>
+            <Text className="news-title">{this.props.data.newsTitle}</Text>
+            <Text className="news-date">{this.props.data.newsDate}</Text>
           </View>
-          <View className="news-btn" type='primary'>{this.props.newsBtn}</View>
+          <View className="news-btn" type='primary'>{this.props.data.newsBtn}</View>
         </View>
         <View className="news-intro">
-          <Text className="news-intro">{this.props.newsIntro}</Text> 
+          <Text className="news-intro">{this.props.data.newsIntro}</Text> 
         </View>
         <Image
           className="news-cover"
           mode="widthFix"
-          src={this.props.newsCover}
+          src={this.props.data.newsCover}
         ></Image>
         <View className="news-options">
           <View className="option-item">
-            
-            <View className="item-icon">{this.props.isLike ? locationImg : Slider}</View>
-            <View className="item-num"></View>
+            <Image 
+              className="item-icon"
+              src={this.props.data.isLike ? like1 : like2}
+            ></Image>
+            <View className="item-num">{this.props.data.likeNum}</View>
           </View>
           <View className="option-item">
             <View className="item-icon"></View>
