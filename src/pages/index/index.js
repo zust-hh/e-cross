@@ -1,10 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
-import HomeItem from '../../components/homeItem'
+import HomeItem from '../../components/homeItem/index.js'
 import './index.scss'
-import TeamCard from '../../components/team-card'
-import NewsCard from '../../components/news-card'
 
 const slider1 = require('../../static/slider1.png')
 const locationImg = require('../../static/location.png')
@@ -28,6 +26,13 @@ const newsData = {
   commentNum: "200",
   collectNum: "123",
   sendNum: "321",
+}
+const caseData = {
+  caseCover: slider1,
+  caseSort: '服装设计',
+  caseIntro: '按照先流行趋势结合面料特点进行设计',
+  caseWatchNum: 123,
+  caseDate: '04-18'
 }
 const service1 = require('../../static/service1.png')
 const serviceText1 = require('../../static/serviceText1.png')
@@ -87,6 +92,17 @@ const list = [{
     commentNum: "200",
     collectNum: "123",
     sendNum: "321",
+  }],
+  readMore: true
+}, {
+  name: '成功案例',
+  listData: [{
+    type: 4,
+    caseCover: slider1,
+    caseSort: '服装设计',
+    caseIntro: '按照先流行趋势结合面料特点进行设计',
+    caseWatchNum: 123,
+    caseDate: '04-18'
   }],
   readMore: true
 }]

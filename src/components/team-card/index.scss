@@ -3,7 +3,10 @@
     width: 334px;
     padding: 20px;
     border: 1PX solid #ddd;
+    background: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);
+
     .team-info {
         display: flex;
         align-items: center;
