@@ -52,3 +52,23 @@
 .home-list {
   padding: 20px 30px;
 }
+
+.at-tab-bar {
+  height: 101px;
+  padding: 0;
+  .at-tab-bar__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 97px;
+    justify-content: center;
+    align-items: center;
+    .at-tab-bar__icon {
+      width: 48px;
+      line-height: 48px;
+    }
+    .at-tab-bar__title {
+      font-size: 12px !important;
+    }
+  }
+}
