@@ -121,7 +121,9 @@ export default class Index extends Component {
             mode='widthFix'
             src={locationImg}
           />
-          <AtButton onClick={() => console.log('click')}>
+          <AtButton onClick={() => Taro.navigateTo({
+            url: '/pages/search/index'
+          })}>
             <Image
               src={searchIcon}
             />

@@ -1,0 +1,28 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.search-input {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    .taro-img {
+        width: 36px;
+        height: 34px;
+    }
+    .at-input {
+        padding: 0;
+        flex: 1;
+        .at-input__container {
+            height: 89px;
+            input {
+                font-size: 32px;
+            }
+        }
+    }
+}
