@@ -1,0 +1,68 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.demand-container {
+    .prompt-text {
+        color: #c4c7ca;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .prompt-view {
+        height: 64px;
+        background-color: rgb(241,245,248);
+        display: flex;
+        align-items: center;
+    }
+    .add-img-list {
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .add-img-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            div {
+                width: 210px;
+                height: 210px;
+                border-radius: 20px;
+                background-color: rgb(241,245,248);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .at-input {
+        padding: 0;
+        flex: 1;
+        .at-input__container {
+            height: 89px;
+            input {
+                font-size: 32px;
+            }
+        }
+        span {
+            font-size: 24px;
+        }
+    }
+    .at-textarea {
+        padding: 20px 20px 20px 60px;
+        border: none;
+        flex: 1;
+        textarea {
+            height: 270px;
+            font-size: 32px;
+        }
+        .at-textarea__counter {
+            font-size: 24px;
+        }
+    }
+}
