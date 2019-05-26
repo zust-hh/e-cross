@@ -20,6 +20,7 @@ class App extends Component {
       'pages/forum/index',
       'pages/release-demand/index',
       'pages/message/index',
+      'pages/chat/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -53,7 +54,7 @@ class App extends Component {
         selectedIconPath: "./static/assets/tab-bar/cart-active.png",
         text: "消息"
       }, {
-        pagePath: "pages/index/index",
+        pagePath: "pages/chat/index",
         iconPath: "./static/assets/tab-bar/user.png",
         selectedIconPath: "./static/assets/tab-bar/user-active.png",
         text: "个人中心"

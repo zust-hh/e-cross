@@ -1,0 +1,25 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.chat-container {
+    height: 100%;
+    background-color: rgb(242,242,242);
+}
+
+.taro_page {
+    height: 100%;
+}
+
+.chat-img {
+    width: 750px;
+}
+
+.chat-bar {
+    width: 750px;
+    position: fixed;
+    bottom: 0;
+}
