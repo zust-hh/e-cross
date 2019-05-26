@@ -56,7 +56,7 @@ const optionArr = [
   {
     icon: msgIcon,
     text: '我的消息',
-    link: ''
+    link: '/pages/message/index'
   },
   {
     icon: collectIcon,
@@ -117,8 +117,6 @@ const groupOptionArr = [
     link: ''
   }
 ]
-
-
 
 export default class User extends Component {
 
