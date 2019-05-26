@@ -1,0 +1,50 @@
+.forum-container {
+  background-color: rgb(242,242,242);
+  font-family: 'SimHei';
+  .swiper {
+    width: 690px;
+    height: 312px;
+    margin-top: 8px;
+    image,
+    img {
+      height: 400px !important;
+    }
+    .taro-img {
+      width: 750px;
+    }
+  }
+  .at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+  }
+  .like-bar {
+    height: 120px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    .like-item {
+      display: flex;
+      flex-direction: column;
+      width: 155px;
+      align-items: center;
+    }
+    .taro-img {
+      width: 44px;
+      height: 44px;
+    }
+    .taro-text {
+      margin-top: 12px;
+      font-size: 20px;
+      color: #555555;
+    }
+  }
+  .news-card {
+    width: 650px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+}
