@@ -1,0 +1,38 @@
+.article {
+  padding-bottom: 100px;
+  .article-header {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+    padding: 30px;
+    .header-back {
+      width: 15px;
+      height: 28px;
+    }
+    .header-spread {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .article-content {
+    display: block;
+    width: 100%;
+    height: 1182px;
+  }
+  .article-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 750px;
+    height: 100px;
+  }
+  .card-wrap {
+    display: flex;
+    justify-content: space-around;
+    background: #f2f2f2;
+  }
+}

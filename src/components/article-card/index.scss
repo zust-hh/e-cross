@@ -1,0 +1,41 @@
+.article-card {
+    position: relative;
+    box-sizing: border-box;
+    width: 320px;
+    // background: #fff;
+    border-radius: 10px;
+
+    .article-like {
+        z-index: 1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 24px;
+    }
+    .article-cover {
+        width: 100%;
+        height: 180px;
+    }
+    .article-sort {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; // 3代表3行
+        overflow: hidden;
+        font-size: 26px;
+    }
+    .price-line {
+        display: flex;
+        align-items: center;
+        .article-price {
+            margin-right: 20px;
+            font-size: 30px;
+            color: #45b5ed;
+        }
+        .article-other {
+            font-size: 24px;
+        }
+    }
+    
+}
+

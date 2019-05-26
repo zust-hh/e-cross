@@ -18,7 +18,8 @@ class App extends Component {
       'pages/index/index',
       'pages/search/index',
       'pages/forum/index',
-      'pages/user/index'
+      'pages/user/index',
+      'pages/article-detail/index'
     ],
     window: {
       backgroundTextStyle: 'light',
