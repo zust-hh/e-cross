@@ -45,28 +45,28 @@ class App extends Component {
       borderStyle: 'black',
       list: [{
         pagePath: "pages/index/index",
-        iconPath: "./static/assets/tab-bar/home.png",
+        iconPath: "./static/assets/tab-bar/home-1.png",
         selectedIconPath: "./static/assets/tab-bar/home-active.png",
         text: "首页"
       }, {
         pagePath: "pages/forum/index",
-        iconPath: "./static/assets/tab-bar/cate.png",
-        selectedIconPath: "./static/assets/tab-bar/cate-active.png",
+        iconPath: "./static/assets/tab-bar/forum.png",
+        selectedIconPath: "./static/assets/tab-bar/forum-active.png",
         text: "论坛"
       }, {
         pagePath: "pages/release-demand/index",
-        iconPath: "./static/assets/tab-bar/cate.png",
-        selectedIconPath: "./static/assets/tab-bar/cate-active.png",
+        iconPath: "./static/assets/tab-bar/publish.png",
+        selectedIconPath: "./static/assets/tab-bar/publish-active.png",
         text: "发布需求"
       }, {
         pagePath: "pages/message/index",
-        iconPath: "./static/assets/tab-bar/cart.png",
-        selectedIconPath: "./static/assets/tab-bar/cart-active.png",
+        iconPath: "./static/assets/tab-bar/msg.png",
+        selectedIconPath: "./static/assets/tab-bar/msg-active.png",
         text: "消息"
       }, {
         pagePath: "pages/user/index",
-        iconPath: "./static/assets/tab-bar/user.png",
-        selectedIconPath: "./static/assets/tab-bar/user-active.png",
+        iconPath: "./static/assets/tab-bar/user-1.png",
+        selectedIconPath: "./static/assets/tab-bar/user-active-1.png",
         text: "个人中心"
       }]
     }

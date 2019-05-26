@@ -4,11 +4,13 @@ import { AtNavBar } from 'taro-ui'
 import NewsCard from '../../components/news-card';
 import './index.scss'
 
-const slider1 = require('../../static/slider1.png')
+const forumCover = require('../../static/forumCover.png')
 const forum1 = require('../../static/forum1.png')
-const forum2 = require('../../static/forum1.png')
-const forum3 = require('../../static/forum1.png')
-const forum4 = require('../../static/forum1.png')
+const forum2 = require('../../static/forum2.png')
+const forum3 = require('../../static/forum3.png')
+const forum4 = require('../../static/forum4.png')
+const favorite2 = require('../../static/favorite2.png')
+const avatar3 = require('../../static/avatar3.png')
 
 const likebar = [
   { icon: forum1, name: '流行趋势' },
@@ -18,12 +20,12 @@ const likebar = [
 ]
 
 const data = {
-  newsAvatar: slider1,
+  newsAvatar: avatar3,
   newsTitle: "YOKA时尚精选",
   newsDate: "2019/4/9",
   newsBtn: "关注",
   newsIntro: "干货|2019服饰流行趋势完全解读干货|2019服饰流行趋势完全解读",
-  newsCover: slider1,
+  newsCover: favorite2,
   likeNum: "145",
   commentNum: "200",
   collectNum: "123",
@@ -51,17 +53,17 @@ export default class Forum extends Component {
         >
           <SwiperItem key={1}>
             <Image mode='widthFix'
-              src={slider1}
+              src={forumCover}
             />
           </SwiperItem>
           <SwiperItem key={2}>
             <Image mode='widthFix'
-              src={slider1}
+              src={forumCover}
             />
           </SwiperItem>
           <SwiperItem key={3}>
             <Image mode='widthFix'
-              src={slider1}
+              src={forumCover}
             />
           </SwiperItem>
         </Swiper>
