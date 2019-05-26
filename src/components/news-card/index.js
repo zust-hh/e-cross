@@ -27,11 +27,18 @@ export default class TeamCard extends Component {
       super(props)
       
   }
-
+  handleClick() {
+    Taro.navigateTo({
+      url: this.props.data.link
+    })
+  }
 
   render() {
     return (
-      <View className="news-card">
+      <View
+        className="news-card"
+        onClick={this.handleClick}
+      >
         <View className="news-user">
           <Image
             className="user-avatar" 

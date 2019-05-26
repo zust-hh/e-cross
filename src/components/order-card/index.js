@@ -15,11 +15,18 @@ export default class TeamCard extends Component {
       super(props)
      
   }
-  
+  handleClick() {
+    Taro.navigateTo({
+      url: this.props.data.link
+    })
+  }
 
   render() {
     return (
-        <View className="order-card">
+        <View
+          className="order-card"
+          onClick={handleClick}
+        >
           <View className="order-header">
             <Text className="">{this.props.data.orderDate}</Text>
             <View>
