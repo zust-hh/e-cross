@@ -24,6 +24,7 @@ class App extends Component {
       'pages/user/index',
       'pages/my-order/index',
       'pages/my-follow/index',
+      'pages/my-favorite/index',
     ],
     window: {
       backgroundTextStyle: 'light',

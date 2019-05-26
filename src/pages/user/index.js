@@ -61,7 +61,7 @@ const optionArr = [
   {
     icon: collectIcon,
     text: '我的收藏',
-    link: ''
+    link: '/pages/my-favorite/index'
   },
   {
     icon: csIcon,
@@ -153,7 +153,9 @@ export default class User extends Component {
           {
             optionArr.map(item => {
               return (
-                <View className="item-wrap">
+                <View className="item-wrap" onClick={() => Taro.navigateTo({
+                  url: item.link
+                })}>
                   <Image
                     src={item.icon}
                     className="item-icon"
