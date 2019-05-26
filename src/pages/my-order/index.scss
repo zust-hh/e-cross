@@ -1,0 +1,25 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.at-tab-bar {
+    height: 90px;
+    margin-bottom: 20px;
+    .at-tab-bar__item {
+        padding: 0;
+    }
+    .at-tab-bar__title {
+        font-size: 24px;
+    }
+    .at-badge__dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.order-card {
+    margin-bottom: 30px;
+}
