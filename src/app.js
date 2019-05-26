@@ -1,4 +1,5 @@
-import Taro, { Component } from '@tarojs/taro'
+import Taro, { Component, navigateTo } from '@tarojs/taro'
+import { AtTabBar } from 'taro-ui'
 import Index from './pages/index'
 
 import './app.scss'
@@ -23,22 +24,46 @@ class App extends Component {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: "#666",
+      selectedColor: "#b4282d",
+      backgroundColor: "#fafafa",
+      borderStyle: 'black',
+      list: [{
+        pagePath: "pages/index/index",
+        iconPath: "./static/assets/tab-bar/home.png",
+        selectedIconPath: "./static/assets/tab-bar/home-active.png",
+        text: "首页"
+      }, {
+        pagePath: "pages/forum/index",
+        iconPath: "./static/assets/tab-bar/cate.png",
+        selectedIconPath: "./static/assets/tab-bar/cate-active.png",
+        text: "论坛"
+      }, {
+        pagePath: "pages/search/index",
+        iconPath: "./static/assets/tab-bar/cate.png",
+        selectedIconPath: "./static/assets/tab-bar/cate-active.png",
+        text: "发布需求"
+      }, {
+        pagePath: "pages/index/index",
+        iconPath: "./static/assets/tab-bar/cart.png",
+        selectedIconPath: "./static/assets/tab-bar/cart-active.png",
+        text: "消息"
+      }, {
+        pagePath: "pages/index/index",
+        iconPath: "./static/assets/tab-bar/user.png",
+        selectedIconPath: "./static/assets/tab-bar/user-active.png",
+        text: "个人中心"
+      }]
     }
   }
 
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
-
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
-      <Index />
+        <Index />
     )
   }
 }

@@ -86,20 +86,6 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      current: 0
-    }
-  }
-
-  handleClick = (data) => {
-    console.log(data);
-    this.setState({
-      current: data
-    })
-  }
-
   render() {
     return (
       <View className="container">
@@ -146,20 +132,6 @@ export default class Index extends Component {
             )
           }
         </View>
-        <AtTabBar
-          fixed
-          tabList={[
-            { title: '首页', iconType: 'bullet-list' },
-            { title: '论坛', iconType: 'camera' },
-            { title: '发布需求', iconType: 'folder' },
-            { title: '消息', iconType: 'camera' },
-            { title: '个人中心', iconType: 'folder' },
-          ]}
-          onClick={this.handleClick}
-          current={this.state.current}
-          iconSize={24}
-          fontSize={14}
-        />
       </View>
     )
   }
