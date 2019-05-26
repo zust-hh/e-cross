@@ -15,7 +15,8 @@ const orderData = [{
   orderCate: '手工包制作',
   orderPrice: 1690,
   orderAmount: 1,
-  orderStatus: 2
+  orderStatus: 2,
+  link: '/pages/order-detail/index'
 }, {
   orderDate: '2019-2-20',
   orderNum: '2224567',
@@ -24,7 +25,9 @@ const orderData = [{
   orderCate: '产品logo及宣传海报设计',
   orderPrice: 2330,
   orderAmount: 1,
-  orderStatus: 3
+  orderStatus: 3,
+  link: '/pages/order-detail/index'
+
 }]
 
 export default class MyOrder extends Component {
