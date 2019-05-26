@@ -20,6 +20,8 @@ class App extends Component {
       'pages/forum/index',
       'pages/user/index',
       'pages/article-detail/index',
+      'pages/service-detail/index',
+      'pages/order-detail/index',
       'pages/release-demand/index',
       'pages/message/index',
       'pages/chat/index',

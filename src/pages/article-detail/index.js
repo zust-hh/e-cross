@@ -16,13 +16,13 @@ const articleList = [
     articleCover: articleCover1,
     articleSort: '【服装设计】服装整体设计包括面料挑选及版衣设计',
     articlePrice: 2000,
-    link: '/pages/article-detail/index'
+    link: '/pages/service-detail/index'
   },
   {
     articleCover: articleCover2,
     articleSort: '【服装设计】品牌全案logo/自制手工包/面料挑选等',
     articlePrice: 1350,
-    link: '/pages/article-detail/index'
+    link: '/pages/service-detail/index'
   }
 ]
 
@@ -55,11 +55,10 @@ export default class ArticleDetail extends Component {
             )
           }
         </View>
-        
-        
         <Image
           src={articleBottom}
           className="article-bottom"
+         
         />
       </View>
     )

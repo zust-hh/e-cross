@@ -19,6 +19,7 @@
     }
     .article-sort {
         display: -webkit-box;
+        /* autoprefixer: off */
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2; // 3代表3行
         overflow: hidden;
