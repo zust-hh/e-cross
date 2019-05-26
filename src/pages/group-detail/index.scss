@@ -1,0 +1,23 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.group-detail-top {
+    width: 750px;
+    height: 930px;
+}
+
+.group-detail-bottom {
+    width: 750px;
+    height: 280px;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    margin-top: -20px;
+} 
