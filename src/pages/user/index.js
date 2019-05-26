@@ -43,7 +43,7 @@ const centerArr = [
   {
     icon: msgIcon,
     text: '我的关注',
-    link: ''
+    link: '/pages/my-follow/index'
   },
   {
     icon: needsIcon,

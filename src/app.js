@@ -23,6 +23,7 @@ class App extends Component {
       'pages/chat/index',
       'pages/user/index',
       'pages/my-order/index',
+      'pages/my-follow/index',
     ],
     window: {
       backgroundTextStyle: 'light',
