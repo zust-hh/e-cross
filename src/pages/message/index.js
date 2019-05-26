@@ -11,10 +11,11 @@ const data = {
   userName: '系统消息',
   msgTime: '11:20',
   msgContent: '我们已经成功接受到您的需求，这边为您提供...',
-  msgNum: 1
+  msgNum: 1,
+  link: '/pages/chat/index'
 }
 
-export default class Search extends Component {
+export default class Message extends Component {
 
   config = {
     navigationBarTitleText: '信息'

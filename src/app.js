@@ -21,7 +21,8 @@ class App extends Component {
       'pages/release-demand/index',
       'pages/message/index',
       'pages/chat/index',
-      'pages/user/index'
+      'pages/user/index',
+      'pages/my-order/index',
     ],
     window: {
       backgroundTextStyle: 'light',

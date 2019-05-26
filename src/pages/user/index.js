@@ -31,14 +31,14 @@ const user = {
     '有工商执照',
     '企业'
   ],
-  score:  5
+  score: 5
 }
 
 const centerArr = [
   {
     icon: orderIcon,
     text: '我的订单',
-    link: ''
+    link: '/pages/my-order/index'
   },
   {
     icon: msgIcon,
@@ -79,7 +79,7 @@ const groupOptionArr = [
   {
     icon: gOrderIcon,
     text: '我的订单',
-    link: ''
+    link: '/pages/my-order/index'
   },
   {
     icon: gInfoIcon,
@@ -128,13 +128,15 @@ export default class User extends Component {
 
   renderSelfUser() {
 
-    return(
+    return (
       <View>
         <View className="user-center">
-            {
-              centerArr.map(item => {
-                return (
-                <View className="item-wrap">
+          {
+            centerArr.map(item => {
+              return (
+                <View className="item-wrap" onClick={() => Taro.navigateTo({
+                  url: item.link
+                })}>
                   <Image
                     src={item.icon}
                     className="center-icon"
@@ -145,7 +147,7 @@ export default class User extends Component {
               )
             })
           }
-            
+
         </View>
         <View className="user-footer">
           {
@@ -166,16 +168,18 @@ export default class User extends Component {
             })
           }
         </View>
-        </View>
+      </View>
     )
   }
 
   renderGroupUser() {
     return <View className="group-center">
       {
-        groupOptionArr.map(item => 
-          <View className="group-item">
-            <Image 
+        groupOptionArr.map(item =>
+          <View className="group-item" onClick={() => Taro.navigateTo({
+            url: item.link
+          })}>
+            <Image
               src={item.icon}
               className="option-icon"
             />
@@ -187,12 +191,12 @@ export default class User extends Component {
         <Text className="option-text">团队主页>></Text>
       </View>
     </View>
-   
+
   }
 
   renderScore(score) {
     var arr = []
-    for(let i =0;i<score;i++) {
+    for (let i = 0; i < score; i++) {
       arr.push(i)
     }
     return arr.map((num) => <Image className="score-icon" src={star} ></Image>)
@@ -204,7 +208,7 @@ export default class User extends Component {
         <View className="user-header">
           <View className="header-back">
             <View className="header-wrap">
-              <Image 
+              <Image
                 src={user.avatar}
                 className="user-avatar"
               ></Image>
@@ -218,13 +222,13 @@ export default class User extends Component {
                 <Text className="tag-add">+</Text>
               </View>
               {
-                userType == 1 && 
+                userType == 1 &&
                 <View className="user-score">
                   <Text className="score-text">综合评分：</Text>
                   <View>
-                  {
-                    this.renderScore(user.score) 
-                  }
+                    {
+                      this.renderScore(user.score)
+                    }
                   </View>
                 </View>
               }

@@ -3,7 +3,8 @@ import { View, Text, Swiper, SwiperItem, Image, } from '@tarojs/components'
 import { AtButton, AtCard } from 'taro-ui'
 import './index.scss'
 
-var statusMap = {
+const statusMap = {
+  0: '待确认',
   1: '待接单',
   2: '进行中',
   3: '待评价'
@@ -13,9 +14,13 @@ export default class TeamCard extends Component {
 
   constructor(props) {
       super(props)
-     
   }
-  handleClick() {
+
+  componentDidMount() {
+    console.log(this.props)
+  }
+
+  handleClick = () => {
     Taro.navigateTo({
       url: this.props.data.link
     })
@@ -25,7 +30,7 @@ export default class TeamCard extends Component {
     return (
         <View
           className="order-card"
-          onClick={handleClick}
+          onClick={this.handleClick}
         >
           <View className="order-header">
             <Text className="">{this.props.data.orderDate}</Text>

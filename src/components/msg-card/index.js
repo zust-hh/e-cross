@@ -8,7 +8,7 @@ export default class TeamCard extends Component {
   constructor(props) {
       super(props)
   }
-  handleClick() {
+  handleClick = () => {
     Taro.navigateTo({
       url: this.props.data.link
     })
