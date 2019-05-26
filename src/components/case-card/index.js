@@ -17,9 +17,15 @@ export default class TeamCard extends Component {
   }
 
 
+  handleClick() {
+    Taro.navigateTo({
+      url: this.props.data.link
+    })
+  }
+
   render() {
     return (
-      <View className="case-card">
+      <View className="case-card" onClick={this.handleClick}>
         <Image
           className="case-cover"
           src={this.props.data.caseCover}></Image>

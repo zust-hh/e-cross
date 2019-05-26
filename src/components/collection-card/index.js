@@ -12,10 +12,17 @@ export default class TeamCard extends Component {
       super(props)
   }
 
+  handleClick() {
+    Taro.navigateTo({
+      url: this.props.data.link
+    })
+  }
+
   render() {
     return (
         <View
           className="coll-card"
+          onClick={this.handleClick}
         >
           <Image
             src={this.props.data.collCover}
