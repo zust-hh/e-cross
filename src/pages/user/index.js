@@ -84,7 +84,7 @@ const groupOptionArr = [
   {
     icon: gInfoIcon,
     text: '团队信息',
-    link: ''
+    link: '/pages/group-detail/index'
   },
   {
     icon: gManageIcon,
@@ -187,7 +187,9 @@ export default class User extends Component {
           </View>
         )
       }
-      <View className="group-item">
+      <View className="group-item" onClick={() => Taro.navigateTo({
+        url: '/pages/group-detail/index'
+      })}>
         <Text className="option-text">团队主页>></Text>
       </View>
     </View>
