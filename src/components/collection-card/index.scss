@@ -1,0 +1,48 @@
+.coll-card {
+    display: flex;
+    box-sizing: border-box;
+    width: 690px;
+    padding: 20px;
+    border: 1PX solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);
+    .coll-cover {
+        flex-shrink: 0;
+        width: 319px;
+        height: 175px;
+    }
+    .coll-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        .coll-title {
+            font-size: 26px;
+        }
+        .coll-content {
+            display: flex;
+            .coll-watch-wrap {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+            }
+            .coll-watch-icon {
+                width: 27px;
+                height: 19px;
+            }
+            .coll-watch-text {
+                font-size: 20px;
+                color: #ccc;
+            }
+        }
+        .coll-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            color: #ccc;
+        }
+        
+    }
+}
+

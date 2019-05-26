@@ -1,0 +1,71 @@
+.order-card {
+    background: #fff;
+    box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);
+    .order-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1PX solid #ddd;
+        font-size: 24px;
+        color: #ccc;
+        .order-num {
+            margin-left: 20px;
+        }
+    }
+    .order-content {
+        display: flex;
+        padding: 20px;
+        border-bottom: 1PX solid #ddd;
+        .content-left {
+            width: 140px;
+            height: 140px;
+        }
+        .content-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 20px;
+            .order-sort {
+                display: block;
+                font-size: 30px;
+            }
+            .order-cate {
+                display: block;
+                font-size: 24px;
+                color: #bbb;
+            }
+        }
+        .content-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: auto;
+            .order-price {
+                font-size: 30px;
+            }
+            .order-amount {
+                font-size: 24px;
+                color: #bbb;
+            }
+        }
+       
+    }
+    .order-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 20px;
+        .order-desc {
+            font-size: 24px;
+        }
+        .order-btn {
+            margin-top: 20px;
+            padding: 3px 20px;
+            border: 1PX solid #45b5ed;
+            font-size: 24px;
+            color: #45b5ed;
+        }
+    }
+    
+}
+
