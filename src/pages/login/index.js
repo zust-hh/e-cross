@@ -3,7 +3,7 @@ import { View, Text, Swiper, SwiperItem, Image, Input } from '@tarojs/components
 import { AtButton, AtTabBar, AtInput } from 'taro-ui'
 import './index.scss'
 
-var avatar1 = require('../../static/avatar1.png')
+var avatar1 = require('../../static/userHead.png')
 var avatar2 = require('../../static/assets/default-avatar.png')
 const userIcon = require('../../static/loginUser.png')
 const psdIcon = require('../../static/loginPsd.png')
@@ -27,7 +27,7 @@ export default class Login extends Component {
     this.setState({
       userName: value
     }, () => {
-      if(this.state.userName.length >= 5) {
+      if(this.state.userName.length >= 4) {
         this.setState({
           avatar: avatar1
         })
@@ -50,6 +50,11 @@ export default class Login extends Component {
       localStorage.setItem('userType', mapUser[this.state.userName])
       Taro.navigateTo({
         url: '/pages/user/index'
+      })
+      this.setState({
+        userName: '',
+        password: '',
+        avatar: avatar2
       })
     } 
   }

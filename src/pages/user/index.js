@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import './index.scss'
+import { AtButton } from 'taro-ui';
 
 const star = require('../../static/star.png')
 const orderIcon = require('../../static/orderIcon.png')
@@ -124,6 +125,19 @@ export default class User extends Component {
     navigationBarTitleText: '用户中心'
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+       userType: 1
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      userType: localStorage.getItem('userType')
+    })
+  }
+ 
   renderSelfUser() {
 
     return (
@@ -214,7 +228,10 @@ export default class User extends Component {
                 src={user.avatar}
                 className="user-avatar"
               ></Image>
-              <Text className="user-name">{user.name}</Text>
+             { 
+             !!this.state.userType ? 
+            <View>
+            <Text className="user-name">{user.name}</Text>
               <View className="user-tags">
                 {
                   user.tags.map(tag => {
@@ -224,7 +241,7 @@ export default class User extends Component {
                 <Text className="tag-add">+</Text>
               </View>
               {
-                userType == 1 &&
+                this.state.userType == 1 &&
                 <View className="user-score">
                   <Text className="score-text">综合评分：</Text>
                   <View>
@@ -233,12 +250,15 @@ export default class User extends Component {
                     }
                   </View>
                 </View>
-              }
+              }</View>
+              : <AtButton onClick={() => {Taro.navigateTo({url: '/pages/login/index'})}}>登录/注册</AtButton>
+            }
+              
             </View>
           </View>
         </View>
         {
-          userType == 1 ? this.renderSelfUser() : this.renderGroupUser()
+          !this.state.userType ? null :(  this.state.userType == 1 ? this.renderSelfUser() : this.renderGroupUser())
         }
       </View>
     )
