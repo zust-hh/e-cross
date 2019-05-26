@@ -2,7 +2,6 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import { AtButton, AtTabBar } from 'taro-ui'
 import HomeItem from '../../components/homeItem/index.js'
-import CollectionCard from '../../components/collection-card'
 import './index.scss'
 
 const slider1 = require('../../static/slider1.png')
@@ -80,14 +79,7 @@ const list = [{
   }],
   readMore: true
 }];
-const collData = {
-  collCover: slider1,
-  collTitle: '广州的厂商，去年的业绩亮眼，今年又将有怎样的变化',
-  collWatch: 123,
-  collZan: 15,
-  collAuthor: '张三lvy',
-  collDate: '04-18',
-}
+
 export default class Index extends Component {
 
   config = {
@@ -154,8 +146,7 @@ export default class Index extends Component {
             )
           }
         </View>
-        <CollectionCard data={collData}></CollectionCard>
-        {/* <AtTabBar
+        <AtTabBar
           fixed
           tabList={[
             { title: '首页', iconType: 'bullet-list' },
@@ -168,7 +159,7 @@ export default class Index extends Component {
           current={this.state.current}
           iconSize={24}
           fontSize={14}
-        /> */}
+        />
       </View>
     )
   }
