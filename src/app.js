@@ -18,7 +18,8 @@ class App extends Component {
       'pages/index/index',
       'pages/search/index',
       'pages/forum/index',
-      'pages/release-demand/index'
+      'pages/release-demand/index',
+      'pages/message/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -47,7 +48,7 @@ class App extends Component {
         selectedIconPath: "./static/assets/tab-bar/cate-active.png",
         text: "发布需求"
       }, {
-        pagePath: "pages/index/index",
+        pagePath: "pages/message/index",
         iconPath: "./static/assets/tab-bar/cart.png",
         selectedIconPath: "./static/assets/tab-bar/cart-active.png",
         text: "消息"

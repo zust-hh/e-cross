@@ -1,0 +1,16 @@
+.at-nav-bar {
+    background-color: #45b5ed;
+    .at-nav-bar__title {
+        color: white;
+    }
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    align-items: center;
+    .msg-card {
+        margin-top: 20px;
+    }
+}
