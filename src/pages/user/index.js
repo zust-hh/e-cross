@@ -100,7 +100,7 @@ const groupOptionArr = [
   {
     icon: gMsgIcon,
     text: '消息',
-    link: ''
+    link: '/pages/message/index'
   },
   {
     icon: gArticleIcon,
@@ -128,7 +128,7 @@ export default class User extends Component {
   constructor(props) {
     super(props)
     this.state = {
-       userType: 1
+      userType: 1
     }
   }
 
@@ -137,7 +137,7 @@ export default class User extends Component {
       userType: localStorage.getItem('userType')
     })
   }
- 
+
   renderSelfUser() {
 
     return (
@@ -228,37 +228,36 @@ export default class User extends Component {
                 src={user.avatar}
                 className="user-avatar"
               ></Image>
-             { 
-             !!this.state.userType ? 
-            <View>
-            <Text className="user-name">{user.name}</Text>
-              <View className="user-tags">
-                {
-                  user.tags.map(tag => {
-                    return <Text className="tag-item">{tag}</Text>
-                  })
-                }
-                <Text className="tag-add">+</Text>
-              </View>
               {
-                this.state.userType == 1 &&
-                <View className="user-score">
-                  <Text className="score-text">综合评分：</Text>
-                  <View>
+                !!this.state.userType ?
+                  <View className="user-wrap">
+                    <Text className="user-name">{user.name}</Text>
+                    <View className="user-tags">
+                      {
+                        user.tags.map(tag => {
+                          return <Text className="tag-item">{tag}</Text>
+                        })
+                      }
+                      <Text className="tag-add">+</Text>
+                    </View>
                     {
-                      this.renderScore(user.score)
-                    }
-                  </View>
-                </View>
-              }</View>
-              : <AtButton onClick={() => {Taro.navigateTo({url: '/pages/login/index'})}}>登录/注册</AtButton>
-            }
-              
+                      this.state.userType == 1 &&
+                      <View className="user-score">
+                        <Text className="score-text">综合评分：</Text>
+                        <View>
+                          {
+                            this.renderScore(user.score)
+                          }
+                        </View>
+                      </View>
+                    }</View>
+                  : <AtButton onClick={() => { Taro.navigateTo({ url: '/pages/login/index' }) }}>登录/注册</AtButton>
+              }
             </View>
           </View>
         </View>
         {
-          !this.state.userType ? null :(  this.state.userType == 1 ? this.renderSelfUser() : this.renderGroupUser())
+          !this.state.userType ? null : (this.state.userType == 1 ? this.renderSelfUser() : this.renderGroupUser())
         }
       </View>
     )

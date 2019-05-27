@@ -49,7 +49,8 @@ const list = [{
     teamContry: '中国',
     teamCity: '杭州',
     teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
-    teamCover: teamCover1
+    teamCover: teamCover1,
+    link: '/pages/group-detail/index'
   }, {
     type: 2,
     teamAvatar: avatar2,
@@ -57,7 +58,8 @@ const list = [{
     teamContry: '坦桑尼亚',
     teamCity: '',
     teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
-    teamCover: teamCover2
+    teamCover: teamCover2,
+    link: '/pages/group-detail/index'
   }],
   readMore: true
 }, {
@@ -74,6 +76,7 @@ const list = [{
     commentNum: "200",
     collectNum: "123",
     sendNum: "321",
+    link: '/pages/article-detail/index'
   }],
   readMore: true
 }, {
@@ -84,14 +87,16 @@ const list = [{
     caseSort: '服装设计',
     caseIntro: '按照先流行趋势结合面料特点进行设计',
     caseWatchNum: 123,
-    caseDate: '04-18'
+    caseDate: '04-18',
+    link: '/pages/service-detail/index'
   }, {
     type: 4,
     caseCover: success2,
     caseSort: '包装推广',
     caseIntro: '对已有的资源进行再加工创造出新的市',
     caseWatchNum: 123,
-    caseDate: '04-18'
+    caseDate: '04-18',
+    link: '/pages/service-detail/index'
   }],
   readMore: true
 }];

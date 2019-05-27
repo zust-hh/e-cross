@@ -19,15 +19,11 @@ const send2 = require('../../static/send2.png')
 
 export default class TeamCard extends Component {
 
-  config = {
-    navigationBarTitleText: '首页'
-  }
-
   constructor(props) {
       super(props)
       
   }
-  handleClick() {
+  handleClick = () => {
     Taro.navigateTo({
       url: this.props.data.link
     })

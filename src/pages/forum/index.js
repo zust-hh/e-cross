@@ -30,6 +30,7 @@ const data = {
   commentNum: "200",
   collectNum: "123",
   sendNum: "321",
+  link: '/pages/article-detail/index'
 }
 
 export default class Forum extends Component {

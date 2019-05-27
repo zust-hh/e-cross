@@ -15,7 +15,6 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/login/index',
       'pages/index/index',
       'pages/search/index',
       'pages/forum/index',
@@ -31,6 +30,7 @@ class App extends Component {
       'pages/my-follow/index',
       'pages/my-favorite/index',
       'pages/group-detail/index',
+      'pages/login/index',
     ],
     window: {
       backgroundTextStyle: 'light',
