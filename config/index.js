@@ -89,7 +89,13 @@ const config = {
             generateScopedName: '[name]__[local]___[hash:base64:5]'
           }
         }
-      }
+      },
+      pxtransform: {
+        enable: true,
+        config: {
+          minPixelValue: 1//设置一个可被转换的最小 px 值
+        }
+      },
     }
   }
 }

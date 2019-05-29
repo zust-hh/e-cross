@@ -11,6 +11,8 @@ const service1 = require('../../static/service1.png')
 const service2 = require('../../static/service2.png')
 const service3 = require('../../static/service3.png')
 const serviceText1 = require('../../static/serviceText1.png')
+const serviceText2 = require('../../static/serviceText2.gif')
+const serviceText3 = require('../../static/serviceText3.gif')
 const avatar1 = require('../../static/avatar1.png')
 const avatar2 = require('../../static/avatar2.png')
 const avatar3 = require('../../static/avatar3.png')
@@ -32,12 +34,12 @@ const list = [{
     type: 1,
     logoImg: service2,
     name: '包装推广',
-    textImg: serviceText1
+    textImg: serviceText2
   }, {
     type: 1,
     logoImg: service3,
     name: '代理顾问',
-    textImg: serviceText1
+    textImg: serviceText3
   }],
   readMore: false
 }, {
@@ -57,7 +59,7 @@ const list = [{
     teamName: 'Tenaj',
     teamContry: '坦桑尼亚',
     teamCity: '',
-    teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
+    teamTags: ['已实名认证', '会英语', '定制', '提供面料资源', '活跃'],
     teamCover: teamCover2,
     link: '/pages/group-detail/index'
   }],
