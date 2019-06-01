@@ -52,7 +52,7 @@ const list = [{
     teamCity: '杭州',
     teamTags: ['已实名认证', '会俄语', '定制', '提供面料资源', '活跃'],
     teamCover: teamCover1,
-    link: '/pages/group-detail/index'
+    link: '/pages/group-detail1/index'
   }, {
     type: 2,
     teamAvatar: avatar2,
@@ -61,7 +61,7 @@ const list = [{
     teamCity: '',
     teamTags: ['已实名认证', '会英语', '定制', '提供面料资源', '活跃'],
     teamCover: teamCover2,
-    link: '/pages/group-detail/index'
+    link: '/pages/group-detail1/index'
   }],
   readMore: true
 }, {

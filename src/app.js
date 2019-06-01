@@ -30,6 +30,7 @@ class App extends Component {
       'pages/my-follow/index',
       'pages/my-favorite/index',
       'pages/group-detail/index',
+      'pages/group-detail1/index',
       'pages/login/index',
     ],
     window: {
